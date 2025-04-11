@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: checklist-service
+  namespace: checklist
+spec:
+  type: LoadBalancer
+  selector:
+    app: checklist-service
+  ports:
+    - port: 80
+      targetPort: 9009
