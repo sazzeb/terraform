@@ -29,18 +29,18 @@ Third
 ####  Apply this to check get ingress on application
 
 ```bash
-     kubectl get ingress -n checklist
+     kubectl get ingress -n checklists
 ```
 
 #####  Check if the TLS is working properly
 ```bash
-    kubectl get certificate -n checklist
+    kubectl get certificate -n checklists
 ```
 
 ```bash
-    kubectl describe certificate outlines-info-tls -n checklist
-    kubectl describe certificate bullboard-info-tls -n checklist
-    kubectl describe ingress outlines-info-ingress -n checklist
-    kubectl describe ingress bullboard-ingress -n checklist
+    kubectl describe certificate outlines-info-tls -n checklists
+    kubectl describe certificate bullboard-info-tls -n checklists
+    kubectl describe ingress outlines-info-ingress -n checklists
+    kubectl describe ingress bullboard-ingress -n checklists
     kubectl logs -n cert-manager deploy/cert-manager
 ```
